@@ -16,23 +16,68 @@ const Hero = () => {
     };
 
     return (
-        <section id="home" className="section section-light">
-            <div className="hero">
-                <div className="container">
-                    <h1>Write Smarter.<br />Collaborate Faster.<br />Publish Better.</h1>
-                    <p className="hero-tagline">LaTeX Reimagined for the Modern Creator</p>
-                    <p className="hero-description">
-                        Docière reimagines LaTeX for modern creators. Collaborate in real time, generate complex math formulas effortlessly, and manage citations without friction — all in an intuitive desktop app that works even when you're offline.
-                    </p>
-                    <div className="hero-cta">
-                        <button className="btn btn-primary" onClick={() => scrollToSection('contact')}>Get Started</button>
-                        <button className="btn btn-secondary" onClick={() => scrollToSection('features')}>See Features</button>
+        <section id="home" className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-50 border border-gray-100 mb-8 animate-fade-in-up">
+                    <span className="flex h-2 w-2 rounded-full bg-accent"></span>
+                    <span className="text-sm font-medium text-gray-600">v2.0 is now available</span>
+                </div>
+
+                {/* Main Heading */}
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6 leading-[1.1]">
+                    Write Smarter.<br />
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500">
+                        Collaborate Faster.
+                    </span>
+                </h1>
+
+                {/* Tagline */}
+                <p className="text-xl md:text-2xl font-light text-gray-500 mb-8">
+                    LaTeX Reimagined for the Modern Creator
+                </p>
+
+                {/* Description */}
+                <p className="max-w-2xl mx-auto text-lg text-gray-600 mb-10 leading-relaxed">
+                    Docière reimagines LaTeX for modern creators. Collaborate in real time, generate complex math formulas effortlessly, and manage citations without friction.
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <button 
+                        onClick={() => scrollToSection('contact')}
+                        className="px-8 py-4 rounded-full bg-black text-white font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
+                    >
+                        Get Started Free
+                    </button>
+                    <button 
+                        onClick={() => scrollToSection('features')}
+                        className="px-8 py-4 rounded-full bg-white text-gray-900 border border-gray-200 font-semibold text-lg hover:bg-gray-50 transition-all hover:border-gray-300"
+                    >
+                        Learn More
+                    </button>
+                </div>
+
+                {/* Hero Image / Preview */}
+                <div className="relative mx-auto max-w-5xl">
+                    <div className="rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:rounded-2xl lg:p-4">
+                         <div className="rounded-md bg-white shadow-2xl overflow-hidden border border-gray-200">
+                            {/* Placeholder for actual screenshot */}
+                             <div className="aspect-[16/9] bg-gray-50 flex items-center justify-center">
+                                <span className="text-gray-400 text-lg font-medium">App Interface Preview</span>
+                            </div>
+                         </div>
                     </div>
-                    <div className="hero-image">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23f5f5f5'/%3E%3Ctext x='50%' y='50%' font-size='20' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3EDocière Pro Interface Preview%3C/text%3E%3C/svg%3E" alt="Docière Pro Interface" />
-                    </div>
+                     {/* Decorative Gradients */}
+                    <div className="absolute -top-24 -left-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob"></div>
+                    <div className="absolute -top-24 -right-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob animation-delay-2000"></div>
+                    <div className="absolute -bottom-32 left-20 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob animation-delay-4000"></div>
                 </div>
             </div>
+            
+             {/* Background Grid Pattern (Optional) */}
+            <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
         </section>
     );
 };
