@@ -16,14 +16,14 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Stats />
-      <VideoSection />
+      {/* <Stats /> */}
+      {/* <VideoSection /> */}
       <ParallaxSection />
       <Features />
-      <Testimonials />
-      <Founders />
-      <Pricing />
-      <Contact />
+      {/* <Testimonials /> */}
+      {/* <Founders /> */}
+      {/* <Pricing /> */}
+      {/* <Contact /> */}
       <Footer />
     </>
   );
