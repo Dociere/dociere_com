@@ -8,7 +8,8 @@ const ParallaxSection = () => {
         {/* Simulate parallax with fixed background attachment */}
         <img
           src="/gradient1.jpg"
-          alt=""
+          alt="parallax image"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gray-50/80 mix-blend-multiply"></div>
