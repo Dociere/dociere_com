@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-1 text-center">
             <span className="font-display text-2xl font-semibold tracking-tight text-white block font-inter mb-1">
               <img
-                src="../public/dociereLogo.png"
+                src="/dociereLogo.png"
                 className="w-20 h-auto mb-2 mx-auto"
                 alt=""
               />

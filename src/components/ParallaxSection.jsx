@@ -7,7 +7,7 @@ const ParallaxSection = () => {
       <div className="absolute inset-0 -z-10">
         {/* Simulate parallax with fixed background attachment */}
         <img
-          src="../public/gradient1.jpg"
+          src="/gradient1.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -41,7 +41,7 @@ const Navbar = () => {
             className="flex-shrink-0 flex items-center cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
-            <img src="../public/logo.png" className="w-10 h-auto" alt="" />
+            <img src="/logo.png" className="w-10 h-auto" alt="" />
             <span className="text-2xl font-playfair text-gray-900 tracking-tight pb-1">
               Docière
             </span>

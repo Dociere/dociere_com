@@ -70,10 +70,7 @@ const Hero = () => {
         <div className="relative mx-auto max-w-5xl">
           <div className="ring-1 ring-inset ring-gray-900/10">
             <div className="rounded-md bg-white shadow-2xl overflow-hidden">
-              <img
-                src="../public/web_hero.png"
-                alt="Dociere Pro Preview Image"
-              />
+              <img src="/web_hero.png" alt="Dociere Pro Preview Image" />
             </div>
           </div>
           {/* Decorative Gradients */}
