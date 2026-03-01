@@ -25,6 +25,7 @@ const Footer = () => {
             <span className="font-display text-2xl font-semibold tracking-tight text-white block font-inter mb-1">
               <img
                 src="/dociereLogo.png"
+                loading="lazy"
                 className="w-20 h-auto mb-2 mx-auto"
                 alt=""
               />
