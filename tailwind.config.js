@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -13,18 +10,12 @@ export default {
         "accent-light": "#f0d4d4",
       },
       fontFamily: {
-        sans: [
-          "Inter",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "sans-serif",
-        ],
+        inter: ["Inter"],
+        playfair: ["Playfair Display"],
+        poppins: ["Poppins"],
+        sans: ["sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
