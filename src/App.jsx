@@ -5,6 +5,7 @@ import Stats from './components/Stats';
 import VideoSection from './components/VideoSection';
 import ParallaxSection from './components/ParallaxSection';
 import Features from './components/Features';
+import Downloads from './components/Downloads';
 import Testimonials from './components/Testimonials';
 import Founders from './components/Founders';
 import Pricing from './components/Pricing';
@@ -20,6 +21,7 @@ function App() {
       {/* <VideoSection /> */}
       <ParallaxSection />
       <Features />
+      <Downloads />
       {/* <Testimonials /> */}
       {/* <Founders /> */}
       {/* <Pricing /> */}

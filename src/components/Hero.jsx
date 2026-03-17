@@ -1,20 +1,7 @@
 import React from "react";
+import { scrollToSection } from "../util/scrollToSection";
 
 const Hero = () => {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 70;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <section
@@ -26,7 +13,7 @@ const Hero = () => {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-50 border border-gray-100 mb-8 animate-fade-in-up">
           <span className="flex h-2 w-2 rounded-full bg-accent"></span>
           <span className="text-sm font-medium text-gray-600">
-            v0.1.x Beta is now available
+            v0.2.x Beta is now available
           </span>
         </div>
 
@@ -53,7 +40,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
-            onClick={() => scrollToSection("contact")}
+            onClick={() => scrollToSection("downloads")}
             className="px-8 py-4 rounded-full bg-black text-white font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
           >
             Get Started for Free

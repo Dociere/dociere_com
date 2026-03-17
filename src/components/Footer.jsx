@@ -1,20 +1,7 @@
 import React from "react";
+import { scrollToSection } from "../util/scrollToSection";
 
 const Footer = () => {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const headerOffset = 70;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition =
-        elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <footer className="bg-black text-white pt-16 pb-8 font-inter">
@@ -56,53 +43,13 @@ const Footer = () => {
                   Features
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("pricing")}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Pricing
-                </button>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Changelog
-                </a>
-              </li>
-            </ul>
+           </ul>
           </div>
 
           {/* Company */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-2">
-              <li>
-                <button
-                  onClick={() => scrollToSection("founders")}
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Our Team
-                </button>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Careers
-                </a>
-              </li>
               <li>
                 <button
                   onClick={() => scrollToSection("contact")}
@@ -132,14 +79,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   Terms of Service
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Security
                 </a>
               </li>
             </ul>
