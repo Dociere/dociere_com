@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { scrollToSection } from "../util/scrollToSection";
 
 const ParallaxSection = () => {
   return (
@@ -25,7 +26,7 @@ const ParallaxSection = () => {
           Join forward-thinking researchers and academics reimagining how they
           work with LaTeX. Stop fighting formatting and start focusing on ideas.
         </p>
-        <button className="px-8 py-4 rounded-full bg-white text-gray-900 font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+        <button onClick={() => scrollToSection("downloads")} className="px-8 py-4 rounded-full bg-white text-gray-900 font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
           Download the App
         </button>
       </div>
