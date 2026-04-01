@@ -17,7 +17,7 @@ const ParallaxSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 font-inter">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
           Experience the Power of <br />
           Seamless Collaboration
@@ -26,7 +26,10 @@ const ParallaxSection = () => {
           Join forward-thinking researchers and academics reimagining how they
           work with LaTeX. Stop fighting formatting and start focusing on ideas.
         </p>
-        <button onClick={() => scrollToSection("downloads")} className="px-8 py-4 rounded-full bg-white text-gray-900 font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+        <button
+          onClick={() => scrollToSection("downloads")}
+          className="px-8 py-2 rounded-md bg-white text-gray-900 font-medium text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
+        >
           Download the App
         </button>
       </div>
