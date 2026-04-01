@@ -9,12 +9,12 @@ const Hero = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Badge */}
-        {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-100/20 border border-yellow-100 mb-8 animate-fade-in-up"> */}
-        {/* <span className="flex h-2 w-2 rounded-full bg-accent"></span> */}
-        {/* <span className="text-[11px] font-medium text-yellow-700 uppercase tracking-[3px]">
-            FOSS-core • Local-first • Content-driven
-          </span> */}
-        {/* </div> */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-sm border border-[#8d6700]/20 mb-8 animate-fade-in-up">
+          {/* <span className="flex h-2 w-2 rounded-full bg-accent"></span> */}
+          <span className="text-[12px] font-medium text-[#8d6700] uppercase tracking-[2px]">
+            Truly FOSS • Offline-first
+          </span>
+        </div>
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6 leading-[1.1]">
@@ -26,7 +26,7 @@ const Hero = () => {
         </h1>
 
         {/* Tagline */}
-        <p className="text-xl md:text-2xl font-light text-gray-500 mb-8">
+        <p className="text-xl md:text-2xl font-light text-gray-500 mb-4">
           LaTeX Redefined for the Modern Creator
         </p>
 
@@ -40,13 +40,13 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
             onClick={() => scrollToSection("downloads")}
-            className="px-8 py-2 rounded-md bg-black text-white font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
+            className="px-8 py-2 rounded-md bg-black text-white font-medium text-base hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
           >
             Get Started for Free
           </button>
           <button
             onClick={() => scrollToSection("features")}
-            className="px-8 py-2 rounded-md bg-white text-gray-900 border border-gray-200 font-semibold text-lg hover:bg-gray-50 transition-all hover:border-gray-300"
+            className="px-8 py-2 rounded-md bg-white text-gray-900 border border-gray-200 font-semibold text-base hover:bg-gray-50 transition-all hover:border-gray-300"
           >
             Learn More
           </button>

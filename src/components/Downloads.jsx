@@ -47,7 +47,13 @@ const Downloads = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+        <div className="text-center mb-12">
+          <div className="inline-block px-4 py-1.5 text-xs font-semibold tracking-[1px] text-[#8d6700] uppercase bg-[#b8a77a]/10 rounded-full">
+            Latest Release: v0.3.4
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
           {downloadOptions.map((option) => (
             <a
               href={option.link}
@@ -67,6 +73,58 @@ const Downloads = () => {
               </div>
             </a>
           ))}
+        </div>
+
+        {/* Minimum System Requirements */}
+        <div className="max-w-4xl mx-auto bg-gray-50 rounded-3xl p-8 md:p-12 border border-gray-100 shadow-sm">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+            Minimum System Requirements
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* <div>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">
+                OS
+              </p>
+              <p className="text-sm text-gray-700 font-medium">
+                Win 10+, macOS 11+, Linux
+              </p>
+            </div> */}
+            <div>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">
+                Processor
+              </p>
+              <p className="text-sm text-gray-700 font-medium">
+                Intel i3 / Apple Silicon
+              </p>
+            </div>
+            <div>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">
+                Memory
+              </p>
+              <p className="text-sm text-gray-700 font-medium">4 GB RAM</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">
+                Storage
+              </p>
+              <p className="text-sm text-gray-700 font-medium">
+                600 MB Free Space
+              </p>
+            </div>
+          </div>
+          {/* <h3 className="text-2xl mt-7 font-semibold text-gray-900 mb-8 text-center">
+            Known Issues
+          </h3>
+          <div className="font-inter">
+            <li>
+              <ul>
+                Unsigned Binaries: The binaries are not signed with a digital
+                certificate, which may cause security warnings or require
+                additional steps to run the application for the first time on
+                macOS and Windows.
+              </ul>
+            </li>
+          </div> */}
         </div>
       </div>
     </section>
