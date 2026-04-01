@@ -2,20 +2,19 @@ import React from "react";
 import { scrollToSection } from "../util/scrollToSection";
 
 const Hero = () => {
-
   return (
     <section
       id="home"
-      className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white"
+      className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-white font-inter"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-50 border border-gray-100 mb-8 animate-fade-in-up">
-          <span className="flex h-2 w-2 rounded-full bg-accent"></span>
-          <span className="text-sm font-medium text-gray-600">
-            v0.2.x Beta is now available
-          </span>
-        </div>
+        {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-yellow-100/20 border border-yellow-100 mb-8 animate-fade-in-up"> */}
+        {/* <span className="flex h-2 w-2 rounded-full bg-accent"></span> */}
+        {/* <span className="text-[11px] font-medium text-yellow-700 uppercase tracking-[3px]">
+            FOSS-core • Local-first • Content-driven
+          </span> */}
+        {/* </div> */}
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6 leading-[1.1]">
@@ -41,13 +40,13 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
           <button
             onClick={() => scrollToSection("downloads")}
-            className="px-8 py-4 rounded-full bg-black text-white font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
+            className="px-8 py-2 rounded-md bg-black text-white font-semibold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 hover:shadow-xl active:scale-95"
           >
             Get Started for Free
           </button>
           <button
             onClick={() => scrollToSection("features")}
-            className="px-8 py-4 rounded-full bg-white text-gray-900 border border-gray-200 font-semibold text-lg hover:bg-gray-50 transition-all hover:border-gray-300"
+            className="px-8 py-2 rounded-md bg-white text-gray-900 border border-gray-200 font-semibold text-lg hover:bg-gray-50 transition-all hover:border-gray-300"
           >
             Learn More
           </button>
@@ -57,7 +56,11 @@ const Hero = () => {
         <div className="relative mx-auto max-w-5xl">
           <div className="ring-1 ring-inset ring-gray-900/10">
             <div className="rounded-md bg-white shadow-2xl overflow-hidden">
-              <img src="/web_hero.png" loading="lazy" alt="Dociere Pro Preview Image" />
+              <img
+                src="/web_hero.png"
+                loading="lazy"
+                alt="Dociere Pro Preview Image"
+              />
             </div>
           </div>
           {/* Decorative Gradients */}
